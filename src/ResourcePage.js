@@ -4,13 +4,14 @@ import axios from "axios";
 import "./ResourcePage.css";
 
 const ResourcePage = () => {
-  const { subject } = useParams();
+  const { subject } = useParams(); // Get subject from URL
   const [resources, setResources] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const formattedSubject = subject.replace(/-/g, " "); // Convert hyphen to space
     axios
-      .get(`http://localhost:5000/resources/${subject}`)
+      .get(`http://localhost:5000/resources/${formattedSubject}`)
       .then((response) => {
         setResources(response.data);
         setLoading(false);

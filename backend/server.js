@@ -54,14 +54,15 @@ app.post("/upload", upload.single("file"), async (req, res) => {
 // ✅ API Route to Fetch Resources by Subject (Title)
 app.get("/resources/:title", async (req, res) => {
   try {
-    const title = req.params.title; // Get subject title from URL
-    const resources = await Resource.find({ title }); // Fetch resources matching the title
+    const title = req.params.title.replace(/-/g, " "); // Convert hyphens to spaces
+    const resources = await Resource.find({ title: { $regex: new RegExp(title, "i") } }); // Case-insensitive match
     res.json(resources);
   } catch (error) {
     console.error("Error fetching resources:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+
 
 // ✅ Start server
 const PORT = process.env.PORT || 5000;
