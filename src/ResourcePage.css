@@ -1,0 +1,87 @@
+/* Page Background */
+.resource-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3f4f6, #e0e0e0);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Title Styling */
+  .resource-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading Text */
+  .loading-text {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* No Resources Message */
+  .no-resources {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Resource Grid */
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  /* Resource Cards */
+  .resource-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .resource-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .resource-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Hover Effect */
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Download Button */
+  .download-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Effect for Button */
+  .download-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  

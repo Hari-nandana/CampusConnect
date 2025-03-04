@@ -1,0 +1,19 @@
+.custom-navbar {
+    background-color: #1d3194cc; /* Green background */
+    color: rgba(254, 254, 254, 0.989); /* White text */
+}
+
+  .custom-navbar .nav-link {
+    color: white; 
+    font: weight 500px;;
+    font-size:larger;/* White links */
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: yellow; /* Yellow text on hover */
+  }
+  
+.navbar-collapse
+{
+    justify-content: end;
+}
