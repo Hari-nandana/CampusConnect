@@ -5,6 +5,7 @@ import Rupload from "./rupload";
 import ResourcePage from "./ResourcePage"; 
 import ClassesPage from "./ClassesPage"; 
 import Rfaculty from "./rfaculty"; 
+import Class from "./Class"; 
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/resources/:subject" element={<ResourcePage />} />
         <Route path="/classes" element={<ClassesPage />} />
         <Route path="/rfaculty/:className" element={<Rfaculty />} />
+        <Route path="/class/:className" element={<Class />} />
       </Routes>
     </Router>
   );

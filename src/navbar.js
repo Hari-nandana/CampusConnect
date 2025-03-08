@@ -52,7 +52,7 @@ function NavigationBar() {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link className="nav-link" to="/next" aria-current="page">
-                  GroupChat
+                  Resources
                 </Link>
               </li>
               <li className="nav-item">
@@ -61,7 +61,7 @@ function NavigationBar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/classes">Events</Link> {/* Updated this line */}
+                <Link className="nav-link" to="/classes">Faculty</Link> {/* Updated this line */}
               </li>
             </ul>
           </div>
