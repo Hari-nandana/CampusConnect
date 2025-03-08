@@ -1,73 +1,64 @@
-/* ✨ Modern, Sleek, & Beautiful Styling */
 .next-page-container {
-  text-align: center;
-  padding: 40px;
-  background: linear-gradient(to bottom, #e3f2fd, #ffffff); /* Light Blue to White */
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  background-color: #000; /* Black background */
+  color: white;
+  text-align: center;
 }
 
 .title {
-  font-size: 38px;
-  font-weight: bold;
-  color: #0056b3; /* Dark Blue */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .description {
-  font-size: 20px;
-  color: #333;
-  font-weight: 500;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #bbb;
 }
 
-/* Class Buttons - Glassmorphism Style */
 .class-buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive */
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   justify-content: center;
-  padding: 20px;
 }
 
 .class-btn {
-  padding: 15px 20px;
-  font-size: 20px;
-  font-weight: bold;
-  background: rgba(255, 255, 255, 0.2); /* Glass effect */
-  backdrop-filter: blur(10px); /* Frosted Glass */
-  color: #0056b3;
-  border: 2px solid #0056b3;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #007bff; /* Blue border */
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient */
+  color: white;
   cursor: pointer;
-  border-radius: 12px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .class-btn:hover {
-  background: #0056b3;
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #0056b3, #003f8a);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.6);
 }
 
 .back-btn {
   margin-top: 20px;
-  padding: 14px 24px;
-  background: #28a745;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: 2px solid white;
+  background-color: transparent;
   color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .back-btn:hover {
-  background: #218838;
-  transform: scale(1.05);
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }

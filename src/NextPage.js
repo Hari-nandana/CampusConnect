@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./NextPage.css"; 
-import { motion } from "framer-motion"; // ✨ Import Framer Motion
+import { motion } from "framer-motion"; 
 
 function NextPage() {
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ function NextPage() {
           <motion.button 
             key={className} 
             className="class-btn"
-            whileHover={{ scale: 1.1, backgroundColor: "#0056b3", color: "#fff" }}
+            whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px rgba(0, 123, 255, 0.6)" }}
             whileTap={{ scale: 0.95 }}
             onClick={() => goToClassPage(className)}
           >
@@ -50,7 +50,8 @@ function NextPage() {
 
       <motion.button 
         className="back-btn"
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.05, boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.3)" }}
+        whileTap={{ scale: 0.95 }}
         onClick={() => navigate("/")}
       >
         ⬅ Back to Home

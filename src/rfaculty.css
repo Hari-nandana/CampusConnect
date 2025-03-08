@@ -1,74 +1,52 @@
-/* Background Styling */
 .upload-container {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #f3f4f6, #e0e0e0);
-  font-family: "Poppins", sans-serif;
+  justify-content: center;
 }
 
-/* Upload Card */
 .upload-card {
-  background: white;
-  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #007bff;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  box-shadow: 0px 0px 12px rgba(0, 123, 255, 0.6);
   text-align: center;
+  width: 400px;
 }
 
-/* Headings */
-.upload-card h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #333;
+h2 {
+  color: #007bff;
+  text-shadow: 0px 0px 8px #007bff;
 }
 
-/* Labels */
-.upload-card label {
-  display: block;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 10px;
-  color: #555;
-}
-
-/* Dropdown and Input Fields */
-.upload-card select,
-.upload-card input {
+.styled-select, .styled-input, .styled-file-input {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
+  border: 2px solid #007bff;
   border-radius: 8px;
-  border: 1px solid #ccc;
-  outline: none;
-  transition: 0.3s;
-}
-
-/* Input Focus */
-.upload-card select:focus,
-.upload-card input:focus {
-  border-color: #007bff;
-  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.4);
-}
-
-/* Upload Button */
-.upload-card button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #007bff;
+  background: rgba(0, 123, 255, 0.2);
   color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  outline: none;
 }
 
-/* Button Hover Effect */
-.upload-card button:hover {
-  background-color: #0056b3;
+.upload-btn {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.9));
+  color: white;
+  border: 2px solid #007bff;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.upload-btn:hover {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 1));
+  box-shadow: 0px 0px 16px #007bff;
   transform: scale(1.05);
 }

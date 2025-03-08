@@ -7,6 +7,7 @@ import ClassesPage from "./ClassesPage";
 import Rfaculty from "./rfaculty"; 
 import Class from "./Class"; 
 
+
 function App() {
   return (
     <Router>
